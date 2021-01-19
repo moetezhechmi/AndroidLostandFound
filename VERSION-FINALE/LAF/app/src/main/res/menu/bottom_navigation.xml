@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Accueil" />
+
+
+    <item
+        android:id="@+id/nav_add"
+        android:icon="@drawable/ic_baseline_add_24"
+        android:title="Ajouter Objet" />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:title="Profil" />
+
+
+    <item
+        android:id="@+id/nav_favoris"
+        android:icon="@drawable/ic_baseline_assignment_24"
+        android:title="Mes Publications" />
+
+    <item
+        android:id="@+id/nav_about"
+        android:icon="@drawable/ic_baseline_new_releases_24"
+        android:title="A propos" />
+
+
+</menu>

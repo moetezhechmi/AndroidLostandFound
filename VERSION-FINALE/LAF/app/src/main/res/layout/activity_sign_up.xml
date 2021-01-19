@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.inscription.inscription">
+
+
+        <EditText
+            android:id="@+id/tfTel"
+            android:layout_width="352dp"
+            android:layout_height="51dp"
+            android:layout_marginBottom="364dp"
+            android:background="@drawable/roun_border"
+            android:drawableStart="@drawable/ic_baseline_local_phone_24"
+            android:ems="10"
+            android:hint="Téléphone"
+            android:inputType="phone"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/IdProf"
+            android:layout_width="413dp"
+            android:layout_height="97dp"
+            android:layout_marginBottom="12dp"
+            android:src="@drawable/profil"
+            app:layout_constraintBottom_toTopOf="@+id/tfNom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/tfNom"
+            android:layout_width="365dp"
+            android:layout_height="56dp"
+            android:layout_marginBottom="496dp"
+            android:background="@drawable/roun_border"
+            android:drawableStart="@drawable/ic_baseline_person_24"
+            android:ems="10"
+            android:hint="Nom"
+            android:inputType="textPersonName"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/tfEmail"
+            android:layout_width="361dp"
+            android:layout_height="53dp"
+            android:layout_marginBottom="304dp"
+            android:background="@drawable/roun_border"
+            android:drawableStart="@drawable/ic_baseline_location_on_24"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textPersonName"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/tfPass"
+            android:layout_width="357dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="236dp"
+            android:background="@drawable/roun_border"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:ems="10"
+            android:hint="Mot de passe"
+            android:inputType="textPassword"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.537"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <fragment
+            android:id="@+id/google_map"
+            android:layout_width="360dp"
+            android:layout_height="135dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tfEmail"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="29dp" />
+
+
+        <EditText
+            android:id="@+id/tfPrenom"
+            android:layout_width="361dp"
+            android:layout_height="54dp"
+            android:layout_marginBottom="424dp"
+            android:background="@drawable/roun_border"
+            android:drawableStart="@drawable/ic_baseline_person_24"
+            android:ems="10"
+            android:hint="Prénom "
+            android:inputType="textPersonName"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.46"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="226dp"
+            android:layout_height="36dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/degrade"
+            android:text="S'inscrir"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.545"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="4dp"
+            android:layout_height="7dp"
+            tools:layout_editor_absoluteX="60dp"
+            tools:layout_editor_absoluteY="36dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

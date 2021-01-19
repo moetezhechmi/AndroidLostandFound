@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.UpdateProfileActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgUser"
+        android:layout_width="209dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="39dp"
+        android:src="@drawable/profil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026" />
+
+    <EditText
+        android:id="@+id/txtFirstName"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:background="@drawable/roun_border"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        android:text="       Name"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.261" />
+
+    <EditText
+        android:id="@+id/txtLastName"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:background="@drawable/roun_border"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        android:text="     Name"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.824"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.261" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="333dp"
+        android:layout_height="50dp"
+        android:background="@drawable/roun_border"
+        android:drawableStart="@drawable/ic_baseline_mail_outline_24"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        android:text="         Name"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.354" />
+
+    <EditText
+        android:id="@+id/txtTel"
+        android:layout_width="333dp"
+        android:layout_height="50dp"
+        android:background="@drawable/roun_border"
+        android:drawableStart="@drawable/ic_baseline_local_phone_24"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        android:text="       Name"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.452" />
+
+    <Button
+        android:id="@+id/btnSaveUpdateProfile"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:background="@drawable/enregistrerbtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="333dp"
+        android:layout_height="50dp"
+        android:text="Modifier le mot de passe ?"
+        android:textColor="#2196F3"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.553" />
+
+    <EditText
+        android:id="@+id/txtOldPass"
+        android:layout_width="333dp"
+        android:layout_height="50dp"
+        android:background="@drawable/roun_border"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:ems="10"
+        android:hint="Ancien Mot de passe"
+        android:inputType="textPassword"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.627" />
+
+    <EditText
+        android:id="@+id/txtNewPass"
+        android:layout_width="333dp"
+        android:layout_height="50dp"
+        android:background="@drawable/roun_border"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:ems="10"
+        android:hint="Nouveau Mot de passe"
+        android:inputType="textPassword"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.737" />
+
+    <EditText
+        android:id="@+id/txtConfirmPass"
+        android:layout_width="333dp"
+        android:layout_height="50dp"
+        android:background="@drawable/roun_border"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:ems="10"
+        android:hint="Confirm Mot de passe"
+        android:inputType="textPassword"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.843" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

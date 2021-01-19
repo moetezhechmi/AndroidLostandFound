@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tn.LostAndFound.mini_projet_android_laf">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logoooo"
+        android:label="lost and found"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".utils.MediaPlayerActivity"></activity>
+        <activity android:name=".utils.PhotoViewerActivity" />
+        <activity android:name=".UI.ChatFromPubActivity" />
+        <activity android:name=".chat.ParticipantListActivity" />
+        <activity android:name=".chat.CreateOpenChannelActivity" />
+        <activity android:name=".chat.OpenChannelActivity" />
+        <activity android:name=".chat.ChatFromPubActivity" />
+        <activity android:name=".UI.SplashScreenActivity" />
+        <activity android:name=".UI.CommentaireActivity" />
+        <activity android:name=".UI.LocationPerduActivity" />
+        <activity android:name=".UI.ListLikeActivity" />
+        <activity android:name=".UI.UpdateProfileActivity" />
+        <activity android:name=".UI.FormObjTrouveActivity" />
+        <activity android:name=".UI.FormObjPerduActivity" />
+        <activity android:name=".UI.HomeActivity" />
+        <activity android:name=".UI.SignUpActivity" />
+        <activity android:name=".UI.SignInActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAw9doJqKetVkz58rH7J1pdlCwXrFoJkhE" />
+    </application>
+
+</manifest>

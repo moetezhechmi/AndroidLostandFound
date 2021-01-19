@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/iv_userlike"
+        android:layout_width="75dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/profil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginTop="10dp" />
+
+    <TextView
+        android:id="@+id/tv_usernamelike"
+        android:layout_width="149dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="70dp"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@id/iv_userlike"
+        app:layout_constraintStart_toEndOf="@id/iv_userlike"
+        app:layout_constraintTop_toTopOf="@id/iv_userlike"
+        tools:text="Foulen Ben Foulen" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

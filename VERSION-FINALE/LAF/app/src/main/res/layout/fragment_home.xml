@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/loadingPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" >
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_all_location"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="360dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_baseline_my_location_24" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewMESPUB"
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_marginTop="65dp"
+        />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:queryHint="Rechercher"
+        android:iconifiedByDefault="false"
+        android:layout_alignParentTop="true"
+        />
+
+</RelativeLayout>

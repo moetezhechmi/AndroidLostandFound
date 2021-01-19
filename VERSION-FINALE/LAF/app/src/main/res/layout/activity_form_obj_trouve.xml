@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".UI.FormObjPerduActivity">
+
+        <Button
+            android:id="@+id/btnlogout"
+            android:layout_width="10dp"
+            android:layout_height="36dp"
+            android:text="Deconnecter"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_objetperdu"
+            android:layout_width="366dp"
+            android:layout_height="72dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/objtrouv" />
+
+        <ImageView
+            android:id="@+id/iv_uploadPhototrouve"
+            android:layout_width="370dp"
+            android:layout_height="134dp"
+            android:background="@drawable/rond"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_addphotoperdu"
+            app:srcCompat="@drawable/rond" />
+
+        <ImageView
+            android:id="@+id/imgPubb"
+            android:layout_width="317dp"
+            android:layout_height="100dp"
+            android:background="#FFFFFF"
+            app:layout_constraintTop_toTopOf="@id/iv_uploadPhototrouve"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_uploadPhototrouve"
+            app:layout_constraintStart_toStartOf="@id/iv_uploadPhototrouve"
+            app:layout_constraintEnd_toEndOf="@id/iv_uploadPhototrouve"
+            app:srcCompat="@drawable/trans" />
+
+        <Spinner
+            android:id="@+id/txtTitelPerdu"
+            android:layout_width="366dp"
+            android:layout_height="50dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_uploadPhototrouve"
+            />
+
+
+        <EditText
+            android:id="@+id/txtObjetPerdu"
+            android:layout_width="362dp"
+            android:layout_height="108dp"
+            android:background="@drawable/rond"
+            android:ems="10"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:hint="Qu'avez vous trouvé?"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtTitelPerdu"
+            />
+
+
+        <tn.LostAndFound.mini_projet_android_laf.UI.CustomMapView
+            android:id="@+id/mapViewtrouve"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="28dp"
+            android:src="@drawable/location"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_maptrouve" />
+
+        <TextView
+            android:id="@+id/tv_maptrouve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:text=""
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtObjetPerdu"
+            tools:layout_editor_absoluteX="43dp" />
+
+        <TextView
+            android:id="@+id/tv_addphotoperdu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ajouter une photo de l'objet"
+            android:textColor="#2196F3"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/iv_objetperdu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/buttonPublierPerdu"
+            android:layout_width="325dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/publierbutton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:paddingBottom="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/mapViewtrouve"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

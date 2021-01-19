@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:animateLayoutChanges="true"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FBFBFB">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/iv_user"
+        android:layout_width="75dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/profil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginTop="10dp" />
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="149dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="@id/iv_user"
+        app:layout_constraintStart_toEndOf="@id/iv_user"
+        app:layout_constraintTop_toTopOf="@id/iv_user"
+        tools:text="Foulen Ben Foulen" />
+
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#673AB7"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintStart_toStartOf="@id/iv_like"
+        app:layout_constraintTop_toBottomOf="@+id/iv_publication"
+        tools:text="datetime" />
+
+    <TextView
+        android:id="@+id/tv_adresse"
+        android:layout_width="wrap_content"
+        android:maxLines="4"
+        android:lines="4"
+        android:layout_height="fill_parent"
+        android:gravity="left"
+        android:paddingRight="10dp"
+        app:layout_constraintStart_toStartOf="@id/tv_username"
+        app:layout_constraintTop_toBottomOf="@id/tv_username"
+        android:textColor="#86838C"
+        android:textSize="15sp"
+        tools:text="adresse"
+
+        />
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:textColor="#4E575E"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_user"
+        tools:text="titre" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="wrap_content"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        tools:text="description" />
+
+
+    <ImageView
+        android:id="@+id/iv_publication"
+        android:layout_width="411dp"
+        android:layout_height="288dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/chatperdu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_description" />
+
+
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_trouve"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_baseline_delete_outline_24" />
+
+    <ImageView
+        android:id="@+id/iv_like"
+        android:layout_width="42dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/coeur"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@id/iv_publication"
+        app:layout_constraintTop_toBottomOf="@id/tv_time" />
+
+    <ImageView
+        android:id="@+id/iv_commentaire"
+        android:layout_width="52dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/comment"
+        app:layout_constraintStart_toEndOf="@id/iv_like"
+        app:layout_constraintTop_toBottomOf="@id/tv_time" />
+
+
+    <ImageView
+        android:id="@+id/iv_sendHome"
+        android:layout_width="52dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_baseline_my_location_24"
+        app:layout_constraintStart_toEndOf="@id/iv_commentaire"
+        app:layout_constraintTop_toBottomOf="@id/tv_time" />
+
+
+
+
+    <TextView
+        android:id="@+id/tv_nblike"
+        android:layout_width="47dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintStart_toStartOf="@id/iv_like"
+        app:layout_constraintTop_toBottomOf="@id/iv_like"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/tv_nbcomment"
+        android:layout_width="47dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintStart_toStartOf="@id/iv_commentaire"
+        app:layout_constraintTop_toBottomOf="@id/iv_commentaire"
+        android:text="0" />
+
+
+
+    <Button
+        android:id="@+id/btn_trouve"
+        android:layout_width="146dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/degrade"
+        android:textColor="#FBFBFB"
+        app:layout_constraintBottom_toBottomOf="@id/iv_publication"
+        app:layout_constraintEnd_toEndOf="@id/iv_publication"
+        tools:text="J'AI TROUVÉ" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

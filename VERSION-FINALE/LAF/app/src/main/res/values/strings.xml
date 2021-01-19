@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name"></string>
+    <string name="map_key" translatable="false">AIzaSyCtqKEkr_UhVN_nVxr9AAJnBmheVVSBuCI</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="logout">logout</string>
+    <string name="refresh">refresh</string>
+
+    <!-- Open Channel List -->
+    <string name="open_channel_list_participant_count">%1$d participants</string>
+
+    <string name="create_open_channel">Create Open Channel</string>
+    <string name="participant_list">Participants</string>
+
+    <string name="all_open_channels">Open Channels</string>
+
+</resources>
